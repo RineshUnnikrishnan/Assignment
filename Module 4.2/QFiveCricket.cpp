@@ -8,9 +8,8 @@ using namespace std;
 class cricketer
 {
 	protected :
-		
-	string name = "abc";
-	int age = 24;
+	string name = "Kholi";
+	int age = 34;
 	public :	
 };
 
@@ -22,19 +21,18 @@ class batter : public cricketer
 	int i ;
 	
 	public :
-	
 	void inp(int inings)
 	{
 		i = inings ;
-		cout<<"total run : ";
+		cout<<"Total runs : ";
 		cin>>t_r;
 		
-		cout<<endl<<"best performance : ";
+		cout<<endl<<"Best Performance : ";
 		cin>>b_p;
 	}
 	void average()
 	{
-		avg = t_r / i ;
+		avg = t_r / i;
 	}
 	void display()
 	{
@@ -42,13 +40,13 @@ class batter : public cricketer
 		cout<<"age = "<<age<<endl;
 		cout<<"total run = "<<t_r<<" in "<<i<<" inings."<<endl;
 		cout<<"average = "<<avg<<endl;
-		
 	}
 };
+
 int main()
 {
 	int inings;
-	cout<<"enter total inings : ";
+	cout<<"Enter the inings : ";
 	cin>>inings; 
 	
 	batter obj ;
